@@ -1,0 +1,45 @@
+.site-header
+  height 80px
+  background-color $dark-blue
+
+  .site-navigation
+    margin-top 30px
+
+    .menu
+      @extends .list-inline
+
+      li > a
+        color white
+        font-size 18px
+        text-transform uppercase
+        myTransition()
+
+        &:hover
+          color $primary-color
+
+      .active > a
+        color $primary-color
+
+.page-banner
+  position relative
+  height 210px
+
+  .banner-image
+    position absolute
+    z-index -100
+    size(100%)
+    overflow hidden
+    background-color black
+
+    & > img
+      min-width 100%
+      centralizer(true, true)
+      my-opacity(0.2)
+
+  .banner-title
+    position relative
+    margin 0
+    padding-top 50px
+    z-index 100
+    color white
+    text-align center

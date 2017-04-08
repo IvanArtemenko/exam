@@ -1,0 +1,29 @@
+.site-logo
+
+  .logo-right-side
+    color $primary-color
+
+  & > a
+    position relative
+    margin-top 15px
+    display block
+    z-index 10
+    color white
+    font-weight 700
+    font-size 36px
+    padding-left 55px
+
+    &::after
+      before-after()
+      size(48px)
+      left -5px
+      top -5px
+      z-index -1
+      background-color $primary-color
+
+    &::before
+      before-after()
+      size(48px)
+      left 0
+      background-color $dark-blue
+      box-shadow 2.5px 4.3px 6px rgba(0, 1, 1, 0.75)

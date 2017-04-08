@@ -1,0 +1,99 @@
+.home-section
+  position relative
+  background-color $primary-color
+
+  .home-section-image
+    margin-top 150px
+
+    & > img
+      max-width 415px
+      max-height 350px
+
+  .home-section-about
+    margin-top 150px
+    color white
+    text-beautifier()
+
+    .home-section-title
+      font-weight bold
+      font-size 44px
+      text-transform uppercase
+
+    .home-section-subtitle
+      font-weight bold
+
+.welcome-section
+
+  .welcome-section-image
+    margin-top 50px
+
+  .welcome-section-text
+    margin-top 150px
+
+  .welcome-section-title
+    color $lighter-blue
+    font-weight bold
+    text-transform uppercase
+
+  .welcome-section-description
+    color $lighter-blue
+    font-size 16px
+
+.offers-section
+  background-color $lighter-blue
+  padding-bottom 75px
+
+  .offers-section-text
+    margin-top 100px
+    color white
+    text-align center
+
+.works-section
+
+  .works-section-text
+    margin-top 100px
+    text-align center
+
+.clients-section
+  padding 25px 0
+  background-color $primary-color
+
+  .client-section-text
+    text-align center
+    margin-bottom 50px
+    color white
+
+  .clients-slider
+    position relative
+
+  .slides
+    margin-padding(0)
+    text-align center
+    list-style-type none
+
+  .flex-direction-nav
+    margin-padding(0)
+    font-size 24px
+    font-weight bold
+    list-style-type none
+
+    .flex-nav-prev
+    .flex-nav-next
+
+      & > a
+        color white
+        padding 5px 12px
+        border-radius 50%
+        background-color alpha(white, 50%)
+        myTransition()
+
+        &:hover
+          background-color alpha(white, 30%)
+
+    .flex-nav-prev
+      left 15px
+      centralizer(false, true)
+
+    .flex-nav-next
+      right 15px
+      centralizer(false, true)

@@ -1,0 +1,4 @@
+http://dev-artemenko-gh-exam.pantheonsite.io/
+
+login: TyzhProgrammist
+password: TyzhProgrammist111avePHP

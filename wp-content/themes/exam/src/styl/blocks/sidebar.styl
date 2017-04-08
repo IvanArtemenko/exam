@@ -1,0 +1,51 @@
+.widget
+  padding-bottom 15px
+  background-color $lighter-blue
+
+  &:not(:first-child)
+    margin-top 25px
+
+  .widget-title
+    margin 0
+    padding-top 15px
+    color white
+    font-size 24px
+    font-weight bold
+    text-align center
+    text-transform uppercase
+
+  .search-form
+    margin-top 15px
+    text-align center
+
+    .search-input
+      border 1px solid white
+      outline none
+      width 90%
+      color white
+      text-indent 5px
+      background-color $lighter-blue
+
+      +placeholder()
+        color white
+
+.widget_categories
+
+  & > ul
+    center(10px)
+    width 90%
+    @extends .list-unstyled
+
+
+    li
+
+      &:not(:first-child)
+        padding-top 10px
+
+      a
+        font-weight bold
+        color white
+        myTransition()
+
+        &:hover
+          color $primary-color
